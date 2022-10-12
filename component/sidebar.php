@@ -85,7 +85,7 @@ echo '
                             <div class="menu" id="sideBar">
                                 <div class="content-menu" >
                                     <i class="fa fa-book"></i>
-                                    <a href="./sidebar-listbuku.html" style="font-weight:500"
+                                    <a href="./listbukuPage.php" style="font-weight:500"
                                     >List Buku</a>
                                 </div>
                                 <div class="content-menu" >
@@ -94,7 +94,7 @@ echo '
                                 </div>
                                 <div class="content-menu" >
                                     <i class="fa fa-user"></i>
-                                    <a href="./sidebar-profil.html" style="font-weight:500">Profile</a>
+                                    <a href="./profil.php" style="font-weight:500">Profile</a>
                                 </div>
                             </div>
                         <hr>
