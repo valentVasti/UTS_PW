@@ -36,12 +36,6 @@ solid #114ec88d; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0
             <td>'.$data['genre'].'</td>
             <td>'.$data['realese'].'</td>
             <td>'.$data['season'].'</td>
-            <td>
-            <a href="../process/deleteMovieProcess.php?id='.$data['id'].'"
-            onClick="return confirm ( \'Are you sure want to delete this
-            data?\')"> Hapus
-            </a>
-            </td>
             </tr>';
             $no++;
             }
