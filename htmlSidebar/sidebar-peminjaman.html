@@ -92,15 +92,37 @@
                         <hr>
                 </div>
                             
-                    <!--Start Page Div-->
-                    <div class="container p-3 m-3 h-100" style="background-color: rgb(255, 255, 255); border-top: 50px
-                    solid #202b94; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
-                    0.19);" > <!--bikin halaman"nya di dalam div ini-->
-
-                        <p>Peminjaman</p> 
-                                        
+                <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 10px
+                solid #114ec88d; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+                0.19);">
+                
+                    <div class="body d-flex justify-content-between">
+                        <h4>PEMINJAMAN</h4>
                     </div>
-                    <!--End Page Div-->
+                    <hr>
+                        <table class="table ">
+                        <thead>
+                            <tr>
+                                <th scope="col">No.</th>
+                                <th scope="col">Nama User</th>
+                                <th scope="col">Nama Buku</th>
+                                <th scope="col">Tanggal Peminjaman</th>
+                                <th scope="col" >Tanggal Pengembalian</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <th scope="row">'.$no.'</th>
+                                <td>'.$data['nama_user'].'</td>
+                                <td>'.$data['nama_buku'].'</td>
+                                <td>'.$data['tgl_pinjam'].'</td>
+                                <td>'.$data['tgl_kembali'].'</td>
+                            </th>
+                        </tbody>
+                    </table>
+                    <form action="../page/addMoviePage.php" method="post">
+                        <button type="submit" class="btn btn-primary">Add new</button>
+                    </form>
+                </div>
             </div>
 
         </aside>
