@@ -49,9 +49,6 @@ solid #114ec88d; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0
         ?>
         </tbody>
     </table>
-    <form action="../page/addMoviePage.php" method="post">
-        <button type="submit" class="btn btn-primary">Add new</button>
-    </form>
 </div>
 </aside>
 <script
