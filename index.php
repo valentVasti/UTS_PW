@@ -17,7 +17,7 @@ crossorigin="anonymous">
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container">
                 <!-- Nama : nama panggilan kalian -->
-                <a class="navbar-brand fw-bold" href="/gd4_d_10947">PHP - Thomas Dany H</a>
+                <a class="navbar-brand fw-bold" href="/gd4_d_10947">PHP</a>
                 <div class="d-flex justify-content-end">
                     <button class="btn btn-primary me-2" type="button" >
                         <a class="text-light" style="text-decoration: none"
@@ -35,7 +35,7 @@ href="./page/loginPage.php">Login</a>
         <div class="container min-vh-100 d-flex align-items-center">
             <div class="pt-5 mt-4">
                 <h2 class="text-center align-middle text-white"><b class="bg-dark">
-Welcome to Mavient</b></h2>
+Welcome Perpus Atma</b></h2>
             </div>
             </div>
         </div>
