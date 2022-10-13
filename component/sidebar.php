@@ -1,3 +1,11 @@
+<?php
+ session_start();
+if (!$_SESSION['isLogin']) {
+header("location: ../page/loginPage.php");
+}else {
+include('../db.php');
+}
+echo '
 <!Doctype html>
 <html lang="en">
     <head>
@@ -77,62 +85,19 @@
                             <div class="menu" id="sideBar">
                                 <div class="content-menu" >
                                     <i class="fa fa-book"></i>
-                                    <a href="./sidebar-listbuku.html" style="font-weight:500"
+                                    <a href="./listbukuPage.php" style="font-weight:500"
                                     >List Buku</a>
                                 </div>
-                                <div class="content-menu isActive" >
+                                <div class="content-menu" >
                                     <i class="fa fa-sticky-note"></i>
-                                    <a href="./sidebar-peminjaman.html" style="font-weight:500">Peminjaman</a>
+                                    <a href="./peminjamanPage.php" style="font-weight:500">Peminjaman</a>
                                 </div>
                                 <div class="content-menu" >
                                     <i class="fa fa-user"></i>
-                                    <a href="./sidebar-profil.html" style="font-weight:500">Profile</a>
+                                    <a href="./profil.php" style="font-weight:500">Profile</a>
                                 </div>
                             </div>
                         <hr>
                 </div>
-                            
-                <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 10px
-                solid #114ec88d; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
-                0.19);">
-                
-                    <div class="body d-flex justify-content-between">
-                        <h4>PEMINJAMAN</h4>
-                    </div>
-                    <hr>
-                        <table class="table ">
-                        <thead>
-                            <tr>
-                                <th scope="col">No.</th>
-                                <th scope="col">Nama User</th>
-                                <th scope="col">Nama Buku</th>
-                                <th scope="col">Tanggal Peminjaman</th>
-                                <th scope="col" >Tanggal Pengembalian</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <th scope="row">'.$no.'</th>
-                                <td>'.$data['nama_user'].'</td>
-                                <td>'.$data['nama_buku'].'</td>
-                                <td>'.$data['tgl_pinjam'].'</td>
-                                <td>'.$data['tgl_kembali'].'</td>
-                            </th>
-                        </tbody>
-                    </table>
-                    <form action="../page/addMoviePage.php" method="post">
-                        <button type="submit" class="btn btn-primary">Add new</button>
-                    </form>
-                </div>
-            </div>
-
-        </aside>
-            
-
-        
-
-    </body>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-</html> 
+                '
+                ?>
