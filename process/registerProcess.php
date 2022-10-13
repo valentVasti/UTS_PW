@@ -21,9 +21,9 @@
         }
         if((mysqli_num_rows($query2) == 0)|| (mysqli_num_rows($query3) == 0)){
             $query = mysqli_query($con,
-            "INSERT INTO users(email, password, name, phonenum, membership) 
+            "INSERT INTO admins(name, password, email) 
                 VALUES
-            ('$email', '$password', '$name')")
+            ('$name', '$password', '$email')")
                 or die(mysqli_error($con));
             echo
                 '<script>
