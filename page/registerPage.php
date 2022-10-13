@@ -31,18 +31,6 @@ crossorigin="anonymous">
                                         <input class="form-control" id="name" name="name" aria-describedby="emailHelp">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="exampleInputEmail1" class="formlabel">Phone Number</label>
-                                        <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp">
-                                    </div>
-                                    <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="formlabel">Membership</label>
-                                    <select class="form-select" aria-label="Default select example" name="membership" id="membership">
-                                        <option value="Reguler">Reguler</option>
-                                        <option value="Platinum">Platinum</option>
-                                        <option value="Gold">Gold</option>
-                                    </select>
-                                    </div>
-                                    <div class="mb-3">
                                         <label for="exampleInputEmail1" class="formlabel">Email</label>
                                         <input class="form-control" id="email" name="email" aria-describedby="emailHelp">
                                     </div>

@@ -22,7 +22,7 @@ solid #114ec88d; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0
         </thead>
         <tbody>
         <?php
-            $query = mysqli_query($con, "SELECT * FROM movies") or
+            $query = mysqli_query($con, "SELECT * FROM peminjaman") or
             die(mysqli_error($con));
             if (mysqli_num_rows($query) == 0) {
             echo '<tr> <td colspan="7"> Tidak ada data </td> </tr>';
@@ -32,10 +32,10 @@ solid #114ec88d; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0
             echo'
             <tr>
             <th scope="row">'.$no.'</th>
-            <td>'.$data['name'].'</td>
-            <td>'.$data['genre'].'</td>
-            <td>'.$data['realese'].'</td>
-            <td>'.$data['season'].'</td>
+            <td>'.$data['id_user'].'</td>
+            <td>'.$data['id_buku'].'</td>
+            <td>'.$data['tgl_peminjaman'].'</td>
+            <td>'.$data['tgl_pengembalian'].'</td>
             </tr>';
             $no++;
             }
@@ -51,3 +51,4 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
 crossorigin="anonymous"></script>
 </body>
 </html>
+<!-- testtest -->
