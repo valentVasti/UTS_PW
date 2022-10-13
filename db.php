@@ -2,7 +2,7 @@
     $host = "localhost";
     $user = "root";
     $pass = "";
-    $name = "GD4_D_10947";
+    $name = "uts_pw";
     
     $con = mysqli_connect($host,$user,$pass,$name);
     

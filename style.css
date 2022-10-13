@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 .bg {
     background-color: #f8f9fa;
-    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/26/33/KL9UJc.jpg");
+    background-image: url("../asset/landingPageBg.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,4 +9,13 @@
 }
 * {
     font-family: "Poppins";
+}
+
+h2.landingTitle{
+    font-size: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.loginBtn{
+    background-color: #ea6c0d;
 }
