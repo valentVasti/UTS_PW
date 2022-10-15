@@ -10,37 +10,36 @@
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $name = $_POST['name'];
         
-        $query2 = mysqli_query($con, "SELECT * FROM admins WHERE email = '$email'") or
+        $checkEmail = mysqli_query($con, "SELECT * FROM users WHERE email = '$email'") or
              die(mysqli_error($con));
 
-        if(mysqli_num_rows($query2) !=0){
-            echo
-            '<script>
-            alert("Email must be identict");
-            </script>';
-        }
-        if((mysqli_num_rows($query2) == 0)|| (mysqli_num_rows($query3) == 0)){
-            $query = mysqli_query($con,
-            "INSERT INTO admins(name, password, email) 
-                VALUES
-            ('$name', '$password', '$email')")
-                or die(mysqli_error($con));
+        if(mysqli_num_rows($checkEmail) !=0){
             echo
                 '<script>
-            alert("Register Success");
-            window.location = "../index.php"
-            </script>';
+                alert("Email already register");
+                window.location = "../page/registerPage.php"
+                </script>';
         }else{
-            echo
-            '<script>
-            alert("Register Failed");
-            window.location = "../page/registerPage.php"
-            </script>';
+            $query = mysqli_query($con, "INSERT INTO users(name, password, email) VALUES
+            ('$name', '$password', '$email')") or die(mysqli_error($con));
+
+            if($query){
+                echo
+                    '<script>
+                    alert("Register Success");
+                    window.location = "../index.php"
+                    </script>';
+            }else{
+                echo
+                    '<script>
+                    alert("Register Failed");
+                    </script>';
+            }
         }
-        }else{
-            echo
+    }else{
+        echo
             '<script>
             window.history.back()
             </script>';
-        }
+    }
 ?>
